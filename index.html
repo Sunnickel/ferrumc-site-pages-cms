@@ -4,9 +4,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/src/style.css" rel="stylesheet">
+
+  <!-- SEO Meta Tags -->
+  <title>FerrumC - High-Performance Multi-Threaded Minecraft Server</title>
+  <meta name="description"
+    content="FerrumC is a fully multi-threaded Minecraft server built in Rust. Experience fast worlds, smooth ticks, and lean memory usage while staying compatible with vanilla clients." />
+  <meta name="keywords"
+    content="minecraft server, rust, multi-threaded, high performance, vanilla compatible, minecraft 1.20.8, ferrumc, minecraft hosting" />
+  <meta name="author" content="FerrumC Team" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="en" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ferrumc.com/" />
+  <meta property="og:title" content="FerrumC - High-Performance Multi-Threaded Minecraft Server" />
+  <meta property="og:description"
+    content="A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients." />
+  <meta property="og:image" content="https://ferrumc.com/images/in_game.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="FerrumC Minecraft server in-game screenshot" />
+  <meta property="og:site_name" content="FerrumC" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://ferrumc.com/" />
+  <meta name="twitter:title" content="FerrumC - High-Performance Multi-Threaded Minecraft Server" />
+  <meta name="twitter:description"
+    content="A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients." />
+  <meta name="twitter:image" content="https://ferrumc.com/images/in_game.png" />
+  <meta name="twitter:image:alt" content="FerrumC Minecraft server in-game screenshot" />
+  <meta name="twitter:creator" content="@ferrumc" />
+  <meta name="twitter:site" content="@ferrumc" />
+
+  <!-- Additional Meta Tags -->
+  <meta name="theme-color" content="#ea580c" />
+  <meta name="msapplication-TileColor" content="#ea580c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="FerrumC" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://ferrumc.com/" />
+
+  <!-- Favicon and Icons -->
   <link rel="icon" type="image/png" sizes="64x64" href="/images/logo-64.png" />
-  <title>FerrumC</title>
+  <link rel="apple-touch-icon" href="/images/logo.png" />
+
+  <!-- Stylesheets -->
+  <link href="/src/style.css" rel="stylesheet">
 </head>
 
 <body class="bg-neutral-900 text-white">
@@ -21,10 +69,10 @@
       <nav class="hidden md:flex justify-start gap-3 ml-2 text-sm text-neutral-400">
         <a href="#features" class="hover:text-white">Features</a>
         <a href="#blog" class="hover:text-white">Blog</a>
-        <a href="#docs" class="hover:text-white">Documentation</a>
+        <a href="https://docs.ferrumc.com/" class="hover:text-white">Documentation</a>
       </nav>
       <a class="hidden sm:inline-flex items-center rounded-lg bg-white/10 px-4 py-2 font-semibold hover:bg-white/15 justify-self-end"
-        href="#github">Contribute on GitHub</a>
+        href="https://github.com/ferrumc-rs/ferrumc">Contribute on GitHub</a>
       <button id="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"
         class="md:hidden justify-self-end inline-flex items-center p-2 rounded-md bg-white/10 hover:bg-white/15">
         <span class="hamburger">
@@ -39,9 +87,9 @@
         <div class="rounded-xl border border-white/10 bg-neutral-900/95 backdrop-blur shadow-2xl p-3">
           <a href="#features" class="block px-3 py-2 rounded-lg hover:bg-white/10">Features</a>
           <a href="#blog" class="block px-3 py-2 rounded-lg hover:bg-white/10">Blog</a>
-          <a href="#docs" class="block px-3 py-2 rounded-lg hover:bg-white/10">Documentation</a>
+          <a href="https://docs.ferrumc.com/" class="block px-3 py-2 rounded-lg hover:bg-white/10">Documentation</a>
           <div class="h-px my-2 bg-white/10"></div>
-          <a href="#github" class="block px-3 py-2 rounded-lg hover:bg-white/10">GitHub</a>
+          <a href="https://github.com/ferrumc-rs/ferrumc" class="block px-3 py-2 rounded-lg hover:bg-white/10">GitHub</a>
         </div>
       </div>
     </div>
@@ -66,7 +114,7 @@
             <a class="inline-flex items-center rounded-lg bg-orange-600 px-4 py-2 font-semibold hover:bg-orange-500 lift"
               href="#download">Download</a>
             <a class="inline-flex items-center rounded-lg bg-white/10 px-4 py-2 font-semibold hover:bg-white/15 lift"
-              href="#github">View on GitHub</a>
+              href="https://github.com/ferrumc-rs/ferrumc">View on GitHub</a>
           </div>
         </div>
         <div class="flex justify-center order-first md:order-none hero-img-wrap lg:mr-[-40px] mt-4 md:mt-6 lg:mt-0"
