@@ -1,6 +1,6 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import GradientText from "@/components/text/gradient-text";
+import Footer from '@/components/footer';
+import Header from '@/components/header';
+import GradientText from '@/components/text/gradient-text';
 
 export default function Contributing() {
   return (
@@ -11,27 +11,29 @@ export default function Contributing() {
         <div className="max-w-4xl mx-auto shadow-lg rounded-xl p-8">
           <h1 className="text-4xl font-bold mb-6">Contributing</h1>
           <p className="mb-4">
-            When contributing to this repository, you&#39;ll have more luck with getting PRs approved if you come chat
-            with us in the Discord server and let us know about what you are fixing/adding. Keep in mind that clippy,
-            rustfmt and cargo-audit are enforced on CI, so make sure your code passes these checks.
+            When contributing to this repository, you&#39;ll have more luck with getting PRs
+            approved if you come chat with us in the Discord server and let us know about what you
+            are fixing/adding. Keep in mind that clippy, rustfmt and cargo-audit are enforced on CI,
+            so make sure your code passes these checks.
           </p>
 
           <h2 className="text-3xl font-semibold mt-8 mb-4">Pull Request Process</h2>
           <ol className="list-decimal ml-6 space-y-2">
             <li>
-              Make sure all tests and lints pass. PRs that don&#39;t pass CI will be rejected if your code is the cause
-              of the failing tests/lints.
+              Make sure all tests and lints pass. PRs that don&#39;t pass CI will be rejected if
+              your code is the cause of the failing tests/lints.
             </li>
             <li>Make sure all needed files are also included and not using absolute paths.</li>
             <li>
-              Include a sufficient explanation of your PR. What is it adding/fixing, why does this feature need to be
-              added/fixed, who have you discussed this with, etc. If these questions were answered in a conversation on
-              Discord, mention who you talked with and what consensus was reached.
+              Include a sufficient explanation of your PR. What is it adding/fixing, why does this
+              feature need to be added/fixed, who have you discussed this with, etc. If these
+              questions were answered in a conversation on Discord, mention who you talked with and
+              what consensus was reached.
             </li>
             <li>Check again that tests pass.</li>
             <li>Check a 3rd time.</li>
             <li>
-              Check that Clippy passes with no issues:{" "}
+              Check that Clippy passes with no issues:{' '}
               <GradientText>cargo clippy --all-targets -- -Dwarnings</GradientText>
             </li>
             <li>
@@ -50,7 +52,8 @@ export default function Contributing() {
 
           <h4 className="text-xl font-semibold mt-4 mb-1 font-mono">master</h4>
           <p className="mb-3">
-            This is the main branch. All PRs should be made to this branch. It contains completed features.
+            This is the main branch. All PRs should be made to this branch. It contains completed
+            features.
           </p>
 
           <h4 className="text-xl font-semibold mt-4 mb-1 font-mono">feature/feature-name</h4>
@@ -117,7 +120,9 @@ export default function Contributing() {
             </code>
           </pre>
 
-          <p className="mt-4">If you add a new directory, please add it to the above list along with its purpose.</p>
+          <p className="mt-4">
+            If you add a new directory, please add it to the above list along with its purpose.
+          </p>
 
           <h3 className="text-2xl font-semibold mt-6 mb-3"> Code Rules </h3>
           <ul className="list-disc ml-6 space-y-2">
@@ -126,11 +131,12 @@ export default function Contributing() {
             </li>
             <li>No absolute paths.</li>
             <li>
-              Avoid chaining <GradientText>../</GradientText>; use <GradientText>get_root_path()</GradientText> instead.
+              Avoid chaining <GradientText>../</GradientText>; use{' '}
+              <GradientText>get_root_path()</GradientText> instead.
             </li>
             <li>
-              No lazy <GradientText>unwrap()</GradientText>; prefer <GradientText>expect()</GradientText> with detailed
-              messages.
+              No lazy <GradientText>unwrap()</GradientText>; prefer{' '}
+              <GradientText>expect()</GradientText> with detailed messages.
             </li>
             <li>Avoid unnecessary cloning.</li>
             <li>
@@ -143,7 +149,8 @@ export default function Contributing() {
             <li>Use Clippy to ensure no lint errors.</li>
             <li>Use Rustfmt to ensure formatting.</li>
             <li>
-              Prefer <GradientText>#[expect]</GradientText> over <GradientText>#[allow]</GradientText>.
+              Prefer <GradientText>#[expect]</GradientText> over{' '}
+              <GradientText>#[allow]</GradientText>.
             </li>
             <li>
               Use <GradientText>#[cfg(test)]</GradientText> where appropriate.
@@ -151,7 +158,8 @@ export default function Contributing() {
             <li>Add documentation where applicable.</li>
             <li>Unsafe code must be documented and justified.</li>
             <li>
-              No IDE folders like <GradientText>.vscode</GradientText> or <GradientText>.idea</GradientText>.
+              No IDE folders like <GradientText>.vscode</GradientText> or{' '}
+              <GradientText>.idea</GradientText>.
             </li>
             <li>Add tests for new features.</li>
             <li>Add tests that reproduce bugs when fixing them.</li>
@@ -161,7 +169,8 @@ export default function Contributing() {
 
           <h2 className="text-3xl font-semibold mt-8 mb-4">Notes on Formatting</h2>
           <p className="mb-4">
-            Automatic formatting is highly recommended to avoid large clippy fixes at the end of development.
+            Automatic formatting is highly recommended to avoid large clippy fixes at the end of
+            development.
           </p>
         </div>
       </main>

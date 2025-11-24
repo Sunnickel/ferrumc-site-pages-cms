@@ -1,8 +1,8 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Image from "next/image";
-import GradientText from "@/components/text/gradient-text";
-import Link from "next/link";
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import Image from 'next/image';
+import GradientText from '@/components/text/gradient-text';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -19,8 +19,8 @@ export default function Home() {
                 you didn&#39;t know you needed.
               </h1>
               <p className="text-neutral-400 mt-4 mb-5 ">
-                Built in Rust, FerrumC makes servers feel fast, worlds stream in quickly, ticks stay smooth, and memory
-                stays lean while staying compatible with vanilla clients.
+                Built in Rust, FerrumC makes servers feel fast, worlds stream in quickly, ticks stay
+                smooth, and memory stays lean while staying compatible with vanilla clients.
               </p>
               <div className="flex gap-3 mb-4 justify-center md:justify-start">
                 <a
@@ -165,7 +165,9 @@ export default function Home() {
         {/* Contribute */}
         <section className="mx-auto max-w-[1100px] px-5 py-16 text-center">
           <h2 className="text-3xl font-extrabold">Or even want to start contributing?</h2>
-          <p className="text-orange-600 text-3xl font-extrabold mt-1 mb-5">Check us out on GitHub</p>
+          <p className="text-orange-600 text-3xl font-extrabold mt-1 mb-5">
+            Check us out on GitHub
+          </p>
           <Link
             href="https://github.com/ferrumc-rs/ferrumc"
             target="_blank"

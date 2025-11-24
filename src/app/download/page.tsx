@@ -1,5 +1,5 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 export default function Download() {
   return (
@@ -12,7 +12,9 @@ export default function Download() {
         {/* Contribute */}
         <section className="mx-auto max-w-[1100px] px-5 py-16 text-center">
           <h2 className="text-3xl font-extrabold">Want to start contributing?</h2>
-          <p className="text-orange-600 text-3xl font-extrabold mt-1 mb-5">Check us out on GitHub</p>
+          <p className="text-orange-600 text-3xl font-extrabold mt-1 mb-5">
+            Check us out on GitHub
+          </p>
           <a
             id="github"
             className="inline-flex items-center rounded-xl bg-white/10 px-5 py-3 font-semibold hover:bg-white/15 transition-all duration-150 ease-in-out hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(0,0,0,0.35)]"

@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import React from "react";
+import type { Metadata } from 'next';
+import './globals.css';
+import React from 'react';
 
-const SITE_URL = "https://ferrumc.com";
+const SITE_URL = 'https://ferrumc.com';
 const OG_IMAGE = `${SITE_URL}/images/in_game.png`;
 
 const description = `FerrumC is a fully multi-threaded Minecraft server built in Rust.
@@ -12,26 +12,26 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: "FerrumC",
-    template: "FerrumC - %s",
+    default: 'FerrumC',
+    template: 'FerrumC - %s',
   },
 
   description,
 
   keywords: [
-    "minecraft server",
-    "rust",
-    "multi-threaded",
-    "high performance",
-    "vanilla compatible",
-    "minecraft 1.20.8",
-    "minecraft",
-    "1.20.8",
-    "ferrumc",
-    "minecraft hosting",
+    'minecraft server',
+    'rust',
+    'multi-threaded',
+    'high performance',
+    'vanilla compatible',
+    'minecraft 1.20.8',
+    'minecraft',
+    '1.20.8',
+    'ferrumc',
+    'minecraft hosting',
   ],
 
-  authors: [{ name: "FerrumC Team", url: "https://github.com/ferrumc-rs/site" }],
+  authors: [{ name: 'FerrumC Team', url: 'https://github.com/ferrumc-rs/site' }],
 
   robots: {
     index: true,
@@ -39,34 +39,34 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    type: "website",
+    type: 'website',
     url: SITE_URL,
-    title: "FerrumC - High-Performance Multi-Threaded Minecraft Server",
+    title: 'FerrumC - High-Performance Multi-Threaded Minecraft Server',
     description:
-      "A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.",
-    siteName: "FerrumC",
-    locale: "en_US",
+      'A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.',
+    siteName: 'FerrumC',
+    locale: 'en_US',
     images: [
       {
         url: OG_IMAGE,
         width: 1200,
         height: 630,
-        alt: "FerrumC Minecraft server in-game screenshot",
+        alt: 'FerrumC Minecraft server in-game screenshot',
       },
     ],
   },
 
   twitter: {
-    card: "summary_large_image",
-    site: "@ferrumc",
-    creator: "@ferrumc",
-    title: "FerrumC - High-Performance Multi-Threaded Minecraft Server",
+    card: 'summary_large_image',
+    site: '@ferrumc',
+    creator: '@ferrumc',
+    title: 'FerrumC - High-Performance Multi-Threaded Minecraft Server',
     description:
-      "A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.",
+      'A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.',
     images: [
       {
         url: OG_IMAGE,
-        alt: "FerrumC Minecraft server in-game screenshot",
+        alt: 'FerrumC Minecraft server in-game screenshot',
       },
     ],
   },
@@ -76,14 +76,14 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/images/logo-64.png",
-    apple: "/images/logo.png",
+    icon: '/images/logo-64.png',
+    apple: '/images/logo.png',
   },
 
   appleWebApp: {
     capable: true,
-    title: "FerrumC",
-    statusBarStyle: "black-translucent",
+    title: 'FerrumC',
+    statusBarStyle: 'black-translucent',
   },
 };
 
@@ -94,7 +94,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-neutral-900 text-white overflow-x-hidden flex flex-col min-h-screen">{children}</body>
+      <body className="bg-neutral-900 text-white overflow-x-hidden flex flex-col min-h-screen">
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,7 +1,7 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import GradientText from "@/components/text/gradient-text";
-import Link from "next/link";
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import GradientText from '@/components/text/gradient-text';
+import Link from 'next/link';
 
 export default function Blog() {
   return (
@@ -16,8 +16,9 @@ export default function Blog() {
             </h1>
 
             <p className="text-neutral-400 text-lg md:text-xl mt-6 mb-8 max-w-2xl mx-auto">
-              We&#39;re crafting something special for you! Our blog is currently being built and will be launching soon
-              with exciting content about FerrumC, Rust, and Minecraft server development.
+              We&#39;re crafting something special for you! Our blog is currently being built and
+              will be launching soon with exciting content about FerrumC, Rust, and Minecraft server
+              development.
             </p>
 
             <div className="flex gap-3 justify-center mb-12">

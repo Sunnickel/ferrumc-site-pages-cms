@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,23 +55,23 @@ export default function Header() {
           onClick={toggleMenu}
           aria-controls="mobile-menu"
           aria-expanded={menuOpen}
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
           className="md:hidden justify-self-end inline-flex items-center p-2 rounded-md bg-white/10 hover:bg-white/15 transition-colors"
         >
           <span className="inline-block relative w-[22px] h-4">
             <span
               className={`absolute left-0 right-0 h-0.5 rounded-sm transition-all duration-200 ease-in-out bg-white/90 ${
-                menuOpen ? "top-[7px] rotate-45" : "top-0"
+                menuOpen ? 'top-[7px] rotate-45' : 'top-0'
               }`}
             />
             <span
               className={`absolute left-0 right-0 h-0.5 rounded-sm transition-all duration-200 ease-in-out bg-white/90 top-[7px] ${
-                menuOpen ? "opacity-0" : "opacity-100"
+                menuOpen ? 'opacity-0' : 'opacity-100'
               }`}
             />
             <span
               className={`absolute left-0 right-0 h-0.5 rounded-sm transition-all duration-200 ease-in-out bg-white/90 ${
-                menuOpen ? "top-[7px] -rotate-45" : "top-[14px]"
+                menuOpen ? 'top-[7px] -rotate-45' : 'top-[14px]'
               }`}
             />
           </span>
@@ -81,14 +81,22 @@ export default function Header() {
         <div
           id="mobile-menu"
           className={`md:hidden absolute left-0 right-0 top-full mt-2 px-5 z-40 transition-all duration-[180ms] ease-in-out motion-reduce:transition-none ${
-            menuOpen ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"
+            menuOpen
+              ? 'opacity-100 translate-y-0 pointer-events-auto'
+              : 'opacity-0 -translate-y-2 pointer-events-none'
           }`}
         >
           <div className="rounded-xl border border-white/10 bg-neutral-900/95 backdrop-blur shadow-2xl p-3">
-            <a href="/features" className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors">
+            <a
+              href="/features"
+              className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
+            >
               Features
             </a>
-            <a href="/blog" className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors">
+            <a
+              href="/blog"
+              className="block px-3 py-2 rounded-lg hover:bg-white/10 transition-colors"
+            >
               Blog
             </a>
             <a

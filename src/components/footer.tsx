@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { FaDiscord, FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { BiCoffeeTogo } from "react-icons/bi";
-import Link from "next/link";
+import Image from 'next/image';
+import { FaDiscord, FaGithub } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import { BiCoffeeTogo } from 'react-icons/bi';
+import Link from 'next/link';
 
 interface NavLink {
   name: string;
@@ -18,44 +18,44 @@ interface Category {
 export default function Footer() {
   const categories: Category[] = [
     {
-      name: "Product",
+      name: 'Product',
       links: [
-        { name: "Features", url: "/features" },
-        { name: "Download", url: "/download" },
-        { name: "Benchmarks", url: "/benchmarks" },
+        { name: 'Features', url: '/features' },
+        { name: 'Download', url: '/download' },
+        { name: 'Benchmarks', url: '/benchmarks' },
       ],
     },
     {
-      name: "Resources",
+      name: 'Resources',
       links: [
-        { name: "Documentation", url: "https://docs.ferrumc.com/", external: true },
-        { name: "API Reference", url: "https://docs.ferrumc.com/api", external: true },
-        { name: "Blog", url: "/blog" },
+        { name: 'Documentation', url: 'https://docs.ferrumc.com/', external: true },
+        { name: 'API Reference', url: 'https://docs.ferrumc.com/api', external: true },
+        { name: 'Blog', url: '/blog' },
       ],
     },
     {
-      name: "Community",
+      name: 'Community',
       links: [
-        { name: "Buy us a coffee!", url: "https://buymeacoffee.com/ferrumc", external: true },
-        { name: "GitHub", url: "https://github.com/ferrumc-rs/ferrumc", external: true },
-        { name: "Discord", url: "https://discord.gg/qT5J8EMjwk", external: true },
-        { name: "X", url: "https://x.com/ferrumc_rs", external: true },
+        { name: 'Buy us a coffee!', url: 'https://buymeacoffee.com/ferrumc', external: true },
+        { name: 'GitHub', url: 'https://github.com/ferrumc-rs/ferrumc', external: true },
+        { name: 'Discord', url: 'https://discord.gg/qT5J8EMjwk', external: true },
+        { name: 'X', url: 'https://x.com/ferrumc_rs', external: true },
       ],
     },
     {
-      name: "Development",
+      name: 'Development',
       links: [
-        { name: "Contributing", url: "/dev/contributing" },
-        { name: "Roadmap", url: "/dev/roadmap" },
-        { name: "Changelog", url: "/dev/changelog" },
+        { name: 'Contributing', url: '/dev/contributing' },
+        { name: 'Roadmap', url: '/dev/roadmap' },
+        { name: 'Changelog', url: '/dev/changelog' },
       ],
     },
     {
-      name: "Legal",
+      name: 'Legal',
       links: [
-        { name: "Terms of Service", url: "/legal/terms" },
-        { name: "Privacy Policy", url: "/legal/privacy" },
-        { name: "License", url: "/legal/license" },
+        { name: 'Terms of Service', url: '/legal/terms' },
+        { name: 'Privacy Policy', url: '/legal/privacy' },
+        { name: 'License', url: '/legal/license' },
       ],
     },
   ];
@@ -128,8 +128,8 @@ export default function Footer() {
                   <li key={link.name}>
                     <a
                       href={link.url}
-                      target={link.external ? "_blank" : undefined}
-                      rel={link.external ? "noopener noreferrer" : undefined}
+                      target={link.external ? '_blank' : undefined}
+                      rel={link.external ? 'noopener noreferrer' : undefined}
                       className="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-2"
                     >
                       {link.name}
@@ -144,9 +144,12 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <div className="text-sm text-neutral-400">© {new Date().getFullYear()} FerrumC. Licensed under MIT.</div>
+            <div className="text-sm text-neutral-400">
+              © {new Date().getFullYear()} FerrumC. Licensed under MIT.
+            </div>
             <div className="text-xs text-neutral-500 max-w-2xl text-left md:text-right">
-              This website is not an official Minecraft website and is not associated with Mojang Studios or Microsoft.
+              This website is not an official Minecraft website and is not associated with Mojang
+              Studios or Microsoft.
             </div>
           </div>
         </div>

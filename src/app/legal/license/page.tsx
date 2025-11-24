@@ -1,6 +1,6 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Link from "next/link";
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import Link from 'next/link';
 
 export default function License() {
   return (
@@ -19,22 +19,24 @@ export default function License() {
           <h3 className="text-xl font-semibold mb-3">MIT License</h3>
           <div className="bg-white/5 border border-white/10 rounded-lg p-6 text-sm text-neutral-300 leading-relaxed mb-6">
             <p className="mb-4">
-              Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
-              associated documentation files (the &#34;Software&#34;), to deal in the Software without restriction,
-              including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
-              and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so,
-              subject to the following conditions:
+              Permission is hereby granted, free of charge, to any person obtaining a copy of this
+              software and associated documentation files (the &#34;Software&#34;), to deal in the
+              Software without restriction, including without limitation the rights to use, copy,
+              modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+              and to permit persons to whom the Software is furnished to do so, subject to the
+              following conditions:
             </p>
             <p className="mb-4">
-              The above copyright notice and this permission notice shall be included in all copies or substantial
-              portions of the Software.
+              The above copyright notice and this permission notice shall be included in all copies
+              or substantial portions of the Software.
             </p>
             <p className="font-semibold text-white">
-              THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
-              NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-              NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-              WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-              SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+              THE SOFTWARE IS PROVIDED &#34;AS IS&#34;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+              IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+              PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+              HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+              CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE
+              OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             </p>
           </div>
         </section>
@@ -44,12 +46,13 @@ export default function License() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Third-Party Licenses</h2>
           <p className="text-neutral-400 mb-4">
-            FerrumC uses various open-source libraries and dependencies. Each dependency maintains its own license:
+            FerrumC uses various open-source libraries and dependencies. Each dependency maintains
+            its own license:
           </p>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2 mb-4">
             <li>
-              <strong className="text-white">Rust and Cargo dependencies</strong> - Various licenses (MIT, Apache 2.0,
-              BSD)
+              <strong className="text-white">Rust and Cargo dependencies</strong> - Various licenses
+              (MIT, Apache 2.0, BSD)
             </li>
             <li>
               <strong className="text-white">Tokio</strong> - MIT License
@@ -59,7 +62,7 @@ export default function License() {
             </li>
           </ul>
           <p className="text-neutral-400">
-            For a complete list of dependencies and their licenses, please see the{" "}
+            For a complete list of dependencies and their licenses, please see the{' '}
             <Link
               href="https://github.com/ferrumc-rs/ferrumc/blob/main/Cargo.toml"
               target="_blank"
@@ -67,7 +70,7 @@ export default function License() {
               className="text-orange-600 hover:text-orange-500 underline"
             >
               Cargo.toml
-            </Link>{" "}
+            </Link>{' '}
             file in the repository.
           </p>
         </section>
@@ -77,16 +80,16 @@ export default function License() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Minecraft and Mojang</h2>
           <p className="text-neutral-400 mb-4">
-            FerrumC is an independent server implementation and is not affiliated with, endorsed by, or associated with
-            Mojang Studios or Microsoft Corporation.
+            FerrumC is an independent server implementation and is not affiliated with, endorsed by,
+            or associated with Mojang Studios or Microsoft Corporation.
           </p>
           <p className="text-neutral-400 mb-4">
-            &#34;Minecraft&#34; is a trademark of Mojang Synergies AB (Microsoft Corporation). All rights to the
-            Minecraft brand and assets belong to their respective owners.
+            &#34;Minecraft&#34; is a trademark of Mojang Synergies AB (Microsoft Corporation). All
+            rights to the Minecraft brand and assets belong to their respective owners.
           </p>
           <p className="text-neutral-400">
-            FerrumC implements the Minecraft server protocol for educational and community purposes, allowing users to
-            host their own game servers.
+            FerrumC implements the Minecraft server protocol for educational and community purposes,
+            allowing users to host their own game servers.
           </p>
         </section>
 
@@ -95,7 +98,7 @@ export default function License() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Website License</h2>
           <p className="text-neutral-400 mb-4">
-            The FerrumC website and documentation are licensed under{" "}
+            The FerrumC website and documentation are licensed under{' '}
             <Link
               href="https://creativecommons.org/licenses/by/4.0/"
               target="_blank"
@@ -112,13 +115,15 @@ export default function License() {
               <strong className="text-white">Share</strong> - Copy and redistribute the material
             </li>
             <li>
-              <strong className="text-white">Adapt</strong> - Remix, transform, and build upon the material
+              <strong className="text-white">Adapt</strong> - Remix, transform, and build upon the
+              material
             </li>
           </ul>
           <p className="text-neutral-400 mb-3">Under the following terms:</p>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2">
             <li>
-              <strong className="text-white">Attribution</strong> - You must give appropriate credit to FerrumC
+              <strong className="text-white">Attribution</strong> - You must give appropriate credit
+              to FerrumC
             </li>
           </ul>
         </section>
@@ -128,7 +133,7 @@ export default function License() {
         <section>
           <h2 className="text-2xl font-semibold mb-4">Questions?</h2>
           <p className="text-neutral-400">
-            If you have questions about licensing, please contact us via{" "}
+            If you have questions about licensing, please contact us via{' '}
             <Link
               href="https://github.com/ferrumc-rs/ferrumc"
               target="_blank"
@@ -136,8 +141,8 @@ export default function License() {
               className="text-orange-600 hover:text-orange-500 underline"
             >
               GitHub
-            </Link>{" "}
-            ,{" "}
+            </Link>{' '}
+            ,{' '}
             <Link
               href="https://discord.gg/qT5J8EMjwk"
               target="_blank"
@@ -145,7 +150,7 @@ export default function License() {
               className="text-orange-600 hover:text-orange-500 underline"
             >
               Discord
-            </Link>{" "}
+            </Link>{' '}
             or open an issue in the repository.
           </p>
         </section>

@@ -1,17 +1,17 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Link from "next/link";
-import { getReleases } from "@/app/dev/changelog/releases";
-import { parseReleaseBody } from "@/app/dev/changelog/markdown";
-import Collapsible from "@/components/layout/collapsable";
-import Image from "next/image";
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import Link from 'next/link';
+import { getReleases } from '@/app/dev/changelog/releases';
+import { parseReleaseBody } from '@/app/dev/changelog/markdown';
+import Collapsible from '@/components/layout/collapsable';
+import Image from 'next/image';
 
 const typeLabels = {
-  added: "Added",
-  changed: "Changed",
-  fixed: "Fixed",
-  removed: "Removed",
-  security: "Security",
+  added: 'Added',
+  changed: 'Changed',
+  fixed: 'Fixed',
+  removed: 'Removed',
+  security: 'Security',
 };
 
 export default async function Changelog() {
@@ -57,15 +57,17 @@ export default async function Changelog() {
                               {release.tag_name}
                             </Link>
                             {release.name && release.name !== release.tag_name && (
-                              <span className="text-neutral-400 font-normal ml-3">- {release.name}</span>
+                              <span className="text-neutral-400 font-normal ml-3">
+                                - {release.name}
+                              </span>
                             )}
                           </h2>
                           <div className="flex items-center gap-3 mt-1">
                             <time className="text-sm text-neutral-400">
-                              {new Date(release.published_at).toLocaleDateString("en-US", {
-                                year: "numeric",
-                                month: "long",
-                                day: "numeric",
+                              {new Date(release.published_at).toLocaleDateString('en-US', {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric',
                               })}
                             </time>
                             <Link
@@ -91,7 +93,9 @@ export default async function Changelog() {
                   <div className="ml-14 space-y-6 col-span-3">
                     {changes.preamble.length > 0 ? (
                       <div>
-                        <p className="mb-4 pb-4 pt-2 text-sm text-neutral-300 leading-relaxed">{changes.preamble}</p>
+                        <p className="mb-4 pb-4 pt-2 text-sm text-neutral-300 leading-relaxed">
+                          {changes.preamble}
+                        </p>
                       </div>
                     ) : null}
 
@@ -100,8 +104,13 @@ export default async function Changelog() {
                         <div key={groupIndex}>
                           <Collapsible title={typeLabels[changeGroup.type]}>
                             {changeGroup.items.map((item, itemIndex) => (
-                              <li key={itemIndex} className="flex items-start gap-2 text-neutral-300">
-                                <span className="text-neutral-500 mt-1.5 text-center align-middle">&#8226;</span>
+                              <li
+                                key={itemIndex}
+                                className="flex items-start gap-2 text-neutral-300"
+                              >
+                                <span className="text-neutral-500 mt-1.5 text-center align-middle">
+                                  &#8226;
+                                </span>
                                 <span className="mt-1.5 text-center align-middle">{item}</span>
                               </li>
                             ))}
@@ -109,7 +118,9 @@ export default async function Changelog() {
                         </div>
                       ))
                     ) : (
-                      <p className="text-neutral-400 italic">{release.body || "No release notes provided."}</p>
+                      <p className="text-neutral-400 italic">
+                        {release.body || 'No release notes provided.'}
+                      </p>
                     )}
                   </div>
                 </article>
@@ -121,7 +132,7 @@ export default async function Changelog() {
         {/* Footer note */}
         <div className="mt-16 pt-8 border-t border-white/10">
           <p className="text-neutral-400 text-sm text-center">
-            For more detailed changes, see our{" "}
+            For more detailed changes, see our{' '}
             <Link
               href="https://github.com/ferrumc-rs/ferrumc/releases"
               target="_blank"
@@ -129,7 +140,7 @@ export default async function Changelog() {
               className="text-orange-600 hover:text-orange-500 underline"
             >
               GitHub Releases
-            </Link>{" "}
+            </Link>{' '}
             page.
           </p>
         </div>

@@ -1,6 +1,6 @@
-import Header from "@/components/header";
-import Footer from "@/components/footer";
-import Link from "next/link";
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+import Link from 'next/link';
 
 export default function Privacy() {
   return (
@@ -13,12 +13,13 @@ export default function Privacy() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p className="text-neutral-400 mb-4">
-            FerrumC (&#34;we&#34;, &#34;us&#34;, or &#34;our&#34;) is committed to protecting your privacy. This Privacy
-            Policy explains how we collect, use, and safeguard your information when you visit our website or use our
-            software.
+            FerrumC (&#34;we&#34;, &#34;us&#34;, or &#34;our&#34;) is committed to protecting your
+            privacy. This Privacy Policy explains how we collect, use, and safeguard your
+            information when you visit our website or use our software.
           </p>
           <p className="text-neutral-400">
-            By using FerrumC, you agree to the collection and use of information in accordance with this policy.
+            By using FerrumC, you agree to the collection and use of information in accordance with
+            this policy.
           </p>
         </section>
 
@@ -28,25 +29,28 @@ export default function Privacy() {
           <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
 
           <h3 className="text-xl font-semibold mb-3 mt-6">Website Usage</h3>
-          <p className="text-neutral-400 mb-4">When you visit our website, we may automatically collect:</p>
+          <p className="text-neutral-400 mb-4">
+            When you visit our website, we may automatically collect:
+          </p>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2 mb-6">
             <li>
-              <strong className="text-white">Log data</strong> - IP address, browser type, pages visited, time spent on
-              pages
+              <strong className="text-white">Log data</strong> - IP address, browser type, pages
+              visited, time spent on pages
             </li>
             <li>
-              <strong className="text-white">Cookies</strong> - Small data files stored on your device to improve user
-              experience
+              <strong className="text-white">Cookies</strong> - Small data files stored on your
+              device to improve user experience
             </li>
             <li>
-              <strong className="text-white">Analytics data</strong> - Anonymous usage statistics to improve our website
+              <strong className="text-white">Analytics data</strong> - Anonymous usage statistics to
+              improve our website
             </li>
           </ul>
 
           <h3 className="text-xl font-semibold mb-3">FerrumC Server Software</h3>
           <p className="text-neutral-400 mb-4">
-            The FerrumC server software itself does not collect or transmit any personal information. All data remains
-            on your server.
+            The FerrumC server software itself does not collect or transmit any personal
+            information. All data remains on your server.
           </p>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2">
             <li>We do not collect gameplay data</li>
@@ -74,16 +78,21 @@ export default function Privacy() {
 
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Third-Party Services</h2>
-          <p className="text-neutral-400 mb-4">Our website may use third-party services that collect information:</p>
+          <p className="text-neutral-400 mb-4">
+            Our website may use third-party services that collect information:
+          </p>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2 mb-6">
             <li>
-              <strong className="text-white">GitHub</strong> - For hosting our repository and issue tracking
+              <strong className="text-white">GitHub</strong> - For hosting our repository and issue
+              tracking
             </li>
             <li>
-              <strong className="text-white">Discord</strong> - For community chat (if you join our server)
+              <strong className="text-white">Discord</strong> - For community chat (if you join our
+              server)
             </li>
             <li>
-              <strong className="text-white">Analytics providers</strong> - For website usage statistics
+              <strong className="text-white">Analytics providers</strong> - For website usage
+              statistics
             </li>
           </ul>
           <p className="text-neutral-400">
@@ -96,26 +105,29 @@ export default function Privacy() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
           <p className="text-neutral-400 mb-4">
-            We use cookies to enhance your experience on our website. Cookies are small text files stored on your
-            device.
+            We use cookies to enhance your experience on our website. Cookies are small text files
+            stored on your device.
           </p>
 
           <h3 className="text-xl font-semibold mb-3 mt-6">Types of Cookies We Use:</h3>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2 mb-6">
             <li>
-              <strong className="text-white">Essential cookies</strong> - Required for the website to function properly
+              <strong className="text-white">Essential cookies</strong> - Required for the website
+              to function properly
             </li>
             <li>
-              <strong className="text-white">Analytics cookies</strong> - Help us understand how visitors use our site
+              <strong className="text-white">Analytics cookies</strong> - Help us understand how
+              visitors use our site
             </li>
             <li>
-              <strong className="text-white">Preference cookies</strong> - Remember your settings and preferences
+              <strong className="text-white">Preference cookies</strong> - Remember your settings
+              and preferences
             </li>
           </ul>
 
           <p className="text-neutral-400">
-            You can control cookies through your browser settings. Note that disabling cookies may affect website
-            functionality.
+            You can control cookies through your browser settings. Note that disabling cookies may
+            affect website functionality.
           </p>
         </section>
 
@@ -124,11 +136,13 @@ export default function Privacy() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
           <p className="text-neutral-400 mb-4">
-            We take reasonable measures to protect your information from unauthorized access, disclosure, or
-            destruction. However, no method of transmission over the internet is 100% secure.
+            We take reasonable measures to protect your information from unauthorized access,
+            disclosure, or destruction. However, no method of transmission over the internet is 100%
+            secure.
           </p>
           <p className="text-neutral-400">
-            We implement industry-standard security practices, but we cannot guarantee absolute security.
+            We implement industry-standard security practices, but we cannot guarantee absolute
+            security.
           </p>
         </section>
 
@@ -141,16 +155,19 @@ export default function Privacy() {
           </p>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2">
             <li>
-              <strong className="text-white">Access</strong> - Request a copy of the data we hold about you
+              <strong className="text-white">Access</strong> - Request a copy of the data we hold
+              about you
             </li>
             <li>
-              <strong className="text-white">Correction</strong> - Request correction of inaccurate data
+              <strong className="text-white">Correction</strong> - Request correction of inaccurate
+              data
             </li>
             <li>
               <strong className="text-white">Deletion</strong> - Request deletion of your data
             </li>
             <li>
-              <strong className="text-white">Opt-out</strong> - Opt out of certain data collection practices
+              <strong className="text-white">Opt-out</strong> - Opt out of certain data collection
+              practices
             </li>
           </ul>
         </section>
@@ -160,8 +177,8 @@ export default function Privacy() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Children&#39;s Privacy</h2>
           <p className="text-neutral-400">
-            FerrumC does not knowingly collect personal information from children under 13. If you believe we have
-            collected information from a child, please contact us immediately.
+            FerrumC does not knowingly collect personal information from children under 13. If you
+            believe we have collected information from a child, please contact us immediately.
           </p>
         </section>
 
@@ -170,7 +187,7 @@ export default function Privacy() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Open Source Transparency</h2>
           <p className="text-neutral-400 mb-4">
-            FerrumC is open-source software. You can review our entire codebase on{" "}
+            FerrumC is open-source software. You can review our entire codebase on{' '}
             <Link
               href="https://github.com/ferrumc-rs/ferrumc"
               target="_blank"
@@ -178,7 +195,7 @@ export default function Privacy() {
               className="text-orange-600 hover:text-orange-500 underline"
             >
               GitHub
-            </Link>{" "}
+            </Link>{' '}
             to verify that we do not collect or transmit user data.
           </p>
           <p className="text-neutral-400">
@@ -191,20 +208,24 @@ export default function Privacy() {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Changes to This Policy</h2>
           <p className="text-neutral-400 mb-4">
-            We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new
-            policy on this page and updating the &#34;Last updated&#34; date.
+            We may update this Privacy Policy from time to time. We will notify you of any changes
+            by posting the new policy on this page and updating the &#34;Last updated&#34; date.
           </p>
-          <p className="text-neutral-400">We encourage you to review this policy periodically for any changes.</p>
+          <p className="text-neutral-400">
+            We encourage you to review this policy periodically for any changes.
+          </p>
         </section>
 
         <hr className="border-white/10 my-12" />
 
         <section>
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-          <p className="text-neutral-400 mb-4">If you have questions about this Privacy Policy, please contact us:</p>
+          <p className="text-neutral-400 mb-4">
+            If you have questions about this Privacy Policy, please contact us:
+          </p>
           <ul className="list-disc pl-5 text-neutral-400 space-y-2">
             <li>
-              Via GitHub:{" "}
+              Via GitHub:{' '}
               <Link
                 href="https://github.com/ferrumc-rs/ferrumc/issues"
                 target="_blank"
@@ -215,7 +236,7 @@ export default function Privacy() {
               </Link>
             </li>
             <li>
-              Via Discord:{" "}
+              Via Discord:{' '}
               <Link
                 href="https://discord.gg/qT5J8EMjwk"
                 target="_blank"
