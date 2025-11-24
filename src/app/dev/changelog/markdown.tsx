@@ -1,10 +1,10 @@
-export function parseReleaseBody({body}: { body: string; }) {
+export function parseReleaseBody({ body }: { body: string }) {
   const categories = {
     added: [] as string[],
     changed: [] as string[],
     fixed: [] as string[],
     removed: [] as string[],
-    security: [] as string[]
+    security: [] as string[],
   };
 
   const lines = body.split('\n');
@@ -16,7 +16,10 @@ export function parseReleaseBody({body}: { body: string; }) {
     const trimmed = line.trim();
 
     // Detect category headers
-    const isCategory = /^##\s*(added|new|features?|changed|updates?|fixed|bug\s*fixes?|removed|security)/i.test(trimmed);
+    const isCategory =
+      /^##\s*(added|new|features?|changed|updates?|fixed|bug\s*fixes?|removed|security)/i.test(
+        trimmed,
+      );
 
     if (isCategory) {
       foundFirstCategory = true;
@@ -46,10 +49,10 @@ export function parseReleaseBody({body}: { body: string; }) {
   return {
     preamble: preamble.join('\n').trim(),
     categories: Object.entries(categories)
-            .filter(([_, items]) => items.length > 0)
-            .map(([type, items]) => ({
-              type: type as keyof typeof categories,
-              items
-            }))
+      .filter(([, items]) => items.length > 0)
+      .map(([type, items]) => ({
+        type: type as keyof typeof categories,
+        items,
+      })),
   };
 }
