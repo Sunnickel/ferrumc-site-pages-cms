@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@theme {
+  --a-delay: 50ms;
+
+  /* Custom animations */
+  --animate-float-slow: floatSlow 10s ease-in-out infinite;
+  --animate-shimmer: shimmer 6s linear infinite;
+  --animate-pulse-glow: pulse-glow 2.5s infinite ease-in-out;
+}
+
+/* ---------- Motion utilities ---------- */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 0 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 12px 0 rgba(234, 88, 12, 0.6);
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 20px 8px rgba(234, 88, 12, 0.3);
+    opacity: 0.8;
+  }
+}
