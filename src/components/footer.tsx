@@ -1,6 +1,7 @@
-import Image from "next/image";
-import { FaDiscord, FaGithub } from "react-icons/fa";
-import Link from "next/link";
+import Image from 'next/image';
+import {FaDiscord, FaGithub} from 'react-icons/fa';
+import {FaXTwitter} from "react-icons/fa6";
+import {BiCoffeeTogo} from "react-icons/bi";
 
 interface Link {
   name: string;
@@ -26,17 +27,19 @@ export default function Footer() {
     {
       name: "Resources",
       links: [
-        { name: "Documentation", url: "https://docs.ferrumc.com/", external: true },
-        { name: "API Reference", url: "https://docs.ferrumc.com/api", external: true },
-      ],
+        {name: "Documentation", url: "https://docs.ferrumc.com/", external: true},
+        {name: "API Reference", url: "https://docs.ferrumc.com/api", external: true},
+        {name: "Blog", url: "/blog"},
+      ]
     },
     {
       name: "Community",
       links: [
-        { name: "GitHub", url: "https://github.com/ferrumc-rs/ferrumc", external: true },
-        { name: "Discord", url: "https://discord.gg/qT5J8EMjwk", external: true },
-        { name: "Blog", url: "/blog" },
-      ],
+        {name: "Buy us a coffee!", url: "https://discord.gg/qT5J8EMjwk", external: true},
+        {name: "GitHub", url: "https://github.com/ferrumc-rs/ferrumc", external: true},
+        {name: "Discord", url: "https://discord.gg/qT5J8EMjwk", external: true},
+        {name: "X", url: "https://discord.gg/qT5J8EMjwk", external: true},
+      ]
     },
     {
       name: "Development",
@@ -114,7 +117,46 @@ export default function Footer() {
                     >
                       {link.name}
                     </a>
-                  </li>
+                    <a
+                            href="https://buymeacoffee.com/ferrumc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-neutral-400 hover:text-white transition-colors"
+                            aria-label="GitHub"
+                    >
+                      <BiCoffeeTogo/>
+                    </a>
+                    <a
+                            href="https://x.com/ferrumc_rs"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-neutral-400 hover:text-white transition-colors"
+                            aria-label="GitHub"
+                    >
+                      <FaXTwitter/>
+                    </a>
+                  </div>
+                </div>
+
+                {/* Link columns */}
+                {categories.map((category) => (
+                        <div key={category.name} className="col-span-1">
+                          <h3 className="font-semibold mb-4 text-sm">{category.name}</h3>
+                          <ul className="space-y-3">
+                            {category.links.map((link) => (
+                                    <li key={link.name}>
+                                      <a
+                                              href={link.url}
+                                              target={link.external ? "_blank" : undefined}
+                                              rel={link.external ? "noopener noreferrer" : undefined}
+                                              className="text-sm text-neutral-400 hover:text-white transition-colors"
+                                      >
+                                        {link.name}
+                                      </a>
+                                    </li>
+                            ))}
+                          </ul>
+                        </div>
                 ))}
               </ul>
             </div>
