@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import {FaDiscord, FaGithub} from 'react-icons/fa';
+import {FaXTwitter} from "react-icons/fa6";
+import {BiCoffeeTogo} from "react-icons/bi";
 
 interface Link {
   name: string;
@@ -27,14 +29,16 @@ export default function Footer() {
       links: [
         {name: "Documentation", url: "https://docs.ferrumc.com/", external: true},
         {name: "API Reference", url: "https://docs.ferrumc.com/api", external: true},
+        {name: "Blog", url: "/blog"},
       ]
     },
     {
       name: "Community",
       links: [
+        {name: "Buy us a coffee!", url: "https://discord.gg/qT5J8EMjwk", external: true},
         {name: "GitHub", url: "https://github.com/ferrumc-rs/ferrumc", external: true},
         {name: "Discord", url: "https://discord.gg/qT5J8EMjwk", external: true},
-        {name: "Blog", url: "/blog"},
+        {name: "X", url: "https://discord.gg/qT5J8EMjwk", external: true},
       ]
     },
     {
@@ -93,6 +97,24 @@ export default function Footer() {
                             aria-label="Discord"
                     >
                       <FaDiscord/>
+                    </a>
+                    <a
+                            href="https://buymeacoffee.com/ferrumc"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-neutral-400 hover:text-white transition-colors"
+                            aria-label="GitHub"
+                    >
+                      <BiCoffeeTogo/>
+                    </a>
+                    <a
+                            href="https://x.com/ferrumc_rs"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-neutral-400 hover:text-white transition-colors"
+                            aria-label="GitHub"
+                    >
+                      <FaXTwitter/>
                     </a>
                   </div>
                 </div>
