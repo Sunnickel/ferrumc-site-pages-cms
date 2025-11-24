@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import {FaDiscord, FaGithub} from 'react-icons/fa';
-import {FaXTwitter} from "react-icons/fa6";
-import {BiCoffeeTogo} from "react-icons/bi";
+import Image from "next/image";
+import { FaDiscord, FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { BiCoffeeTogo } from "react-icons/bi";
+import Link from "next/link";
 
-interface Link {
+interface NavLink {
   name: string;
   url: string;
   external?: boolean;
@@ -11,7 +12,7 @@ interface Link {
 
 interface Category {
   name: string;
-  links: Link[];
+  links: NavLink[];
 }
 
 export default function Footer() {
@@ -27,19 +28,19 @@ export default function Footer() {
     {
       name: "Resources",
       links: [
-        {name: "Documentation", url: "https://docs.ferrumc.com/", external: true},
-        {name: "API Reference", url: "https://docs.ferrumc.com/api", external: true},
-        {name: "Blog", url: "/blog"},
-      ]
+        { name: "Documentation", url: "https://docs.ferrumc.com/", external: true },
+        { name: "API Reference", url: "https://docs.ferrumc.com/api", external: true },
+        { name: "Blog", url: "/blog" },
+      ],
     },
     {
       name: "Community",
       links: [
-        {name: "Buy us a coffee!", url: "https://discord.gg/qT5J8EMjwk", external: true},
-        {name: "GitHub", url: "https://github.com/ferrumc-rs/ferrumc", external: true},
-        {name: "Discord", url: "https://discord.gg/qT5J8EMjwk", external: true},
-        {name: "X", url: "https://discord.gg/qT5J8EMjwk", external: true},
-      ]
+        { name: "Buy us a coffee!", url: "https://buymeacoffee.com/ferrumc", external: true },
+        { name: "GitHub", url: "https://github.com/ferrumc-rs/ferrumc", external: true },
+        { name: "Discord", url: "https://discord.gg/qT5J8EMjwk", external: true },
+        { name: "X", url: "https://x.com/ferrumc_rs", external: true },
+      ],
     },
     {
       name: "Development",
@@ -62,9 +63,9 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 mt-auto">
       <div className="mx-auto max-w-[1100px] px-5 py-12">
-        {/* Main footer content */}
+        {/* Main grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
-          {/* Brand column */}
+          {/* Brand Column */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image
@@ -76,17 +77,18 @@ export default function Footer() {
               />
               <span className="text-lg font-bold">FerrumC</span>
             </Link>
+
             <p className="text-sm text-neutral-400 mb-4 max-w-xs">
               A fully multi-threaded Minecraft server built in Rust for maximum performance.
             </p>
-            {/* Social links */}
+
+            {/* Social icons */}
             <div className="flex gap-3">
               <a
                 href="https://github.com/ferrumc-rs/ferrumc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
-                aria-label="GitHub"
               >
                 <FaGithub />
               </a>
@@ -95,14 +97,29 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-neutral-400 hover:text-white transition-colors"
-                aria-label="Discord"
               >
                 <FaDiscord />
+              </a>
+              <a
+                href="https://buymeacoffee.com/ferrumc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-white transition-colors"
+              >
+                <BiCoffeeTogo />
+              </a>
+              <a
+                href="https://x.com/ferrumc_rs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-white transition-colors"
+              >
+                <FaXTwitter />
               </a>
             </div>
           </div>
 
-          {/* Link columns */}
+          {/* Dynamic link columns */}
           {categories.map((category) => (
             <div key={category.name} className="col-span-1">
               <h3 className="font-semibold mb-4 text-sm">{category.name}</h3>
@@ -113,63 +130,23 @@ export default function Footer() {
                       href={link.url}
                       target={link.external ? "_blank" : undefined}
                       rel={link.external ? "noopener noreferrer" : undefined}
-                      className="text-sm text-neutral-400 hover:text-white transition-colors"
+                      className="text-sm text-neutral-400 hover:text-white transition-colors flex items-center gap-2"
                     >
                       {link.name}
                     </a>
-                    <a
-                            href="https://buymeacoffee.com/ferrumc"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-neutral-400 hover:text-white transition-colors"
-                            aria-label="GitHub"
-                    >
-                      <BiCoffeeTogo/>
-                    </a>
-                    <a
-                            href="https://x.com/ferrumc_rs"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-neutral-400 hover:text-white transition-colors"
-                            aria-label="GitHub"
-                    >
-                      <FaXTwitter/>
-                    </a>
-                  </div>
-                </div>
-
-                {/* Link columns */}
-                {categories.map((category) => (
-                        <div key={category.name} className="col-span-1">
-                          <h3 className="font-semibold mb-4 text-sm">{category.name}</h3>
-                          <ul className="space-y-3">
-                            {category.links.map((link) => (
-                                    <li key={link.name}>
-                                      <a
-                                              href={link.url}
-                                              target={link.external ? "_blank" : undefined}
-                                              rel={link.external ? "noopener noreferrer" : undefined}
-                                              className="text-sm text-neutral-400 hover:text-white transition-colors"
-                                      >
-                                        {link.name}
-                                      </a>
-                                    </li>
-                            ))}
-                          </ul>
-                        </div>
+                  </li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
 
-        {/* Bottom bar */}
+        {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div className="text-sm text-neutral-400">© {new Date().getFullYear()} FerrumC. Licensed under MIT.</div>
             <div className="text-xs text-neutral-500 max-w-2xl text-left md:text-right">
               This website is not an official Minecraft website and is not associated with Mojang Studios or Microsoft.
-              All product and company names are trademarks™ or registered® trademarks of their respective holders.
             </div>
           </div>
         </div>
