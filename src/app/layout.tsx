@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 
@@ -6,7 +6,7 @@ const SITE_URL = "https://ferrumc.com";
 const OG_IMAGE = `${SITE_URL}/images/in_game.png`;
 
 const description = `FerrumC is a fully multi-threaded Minecraft server built in Rust.
-         Experience fast worlds, smooth ticks, and lean memory usage while staying compatible with vanilla clients.`
+         Experience fast worlds, smooth ticks, and lean memory usage while staying compatible with vanilla clients.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "minecraft hosting",
   ],
 
-  authors: [{name: "FerrumC Team", url: "https://github.com/ferrumc-rs/site"}],
+  authors: [{ name: "FerrumC Team", url: "https://github.com/ferrumc-rs/site" }],
 
   robots: {
     index: true,
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     title: "FerrumC - High-Performance Multi-Threaded Minecraft Server",
     description:
-            "A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.",
+      "A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.",
     siteName: "FerrumC",
     locale: "en_US",
     images: [
@@ -62,11 +62,13 @@ export const metadata: Metadata = {
     creator: "@ferrumc",
     title: "FerrumC - High-Performance Multi-Threaded Minecraft Server",
     description:
-            "A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.",
-    images: [{
-      url: OG_IMAGE,
-      alt: "FerrumC Minecraft server in-game screenshot",
-    }],
+      "A fully multi-threaded Minecraft server built in Rust. Fast world streaming, smooth ticks, and memory efficiency while staying compatible with vanilla clients.",
+    images: [
+      {
+        url: OG_IMAGE,
+        alt: "FerrumC Minecraft server in-game screenshot",
+      },
+    ],
   },
 
   alternates: {
@@ -86,15 +88,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-          <html lang="en">
-          <body className="bg-neutral-900 text-white overflow-x-hidden flex flex-col min-h-screen">
-          {children}
-          </body>
-          </html>
+    <html lang="en">
+      <body className="bg-neutral-900 text-white overflow-x-hidden flex flex-col min-h-screen">{children}</body>
+    </html>
   );
 }

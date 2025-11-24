@@ -15,7 +15,8 @@
 
 /* ---------- Motion utilities ---------- */
 @keyframes floatSlow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -33,7 +34,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 12px 0 rgba(234, 88, 12, 0.6);
     opacity: 1;
   }

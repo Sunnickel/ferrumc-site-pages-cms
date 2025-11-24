@@ -58,3 +58,4 @@ dist-ssr
 *.sw?
 
 .vercel
+/tsconfig.tsbuildinfo
