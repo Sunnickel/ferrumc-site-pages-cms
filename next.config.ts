@@ -1,9 +1,8 @@
-import type { NextConfig } from "next";
+import type {NextConfig} from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
-  distDir: 'dist',
+	/* config options here */
+	reactCompiler: true
 };
 
 export default nextConfig;
