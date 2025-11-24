@@ -2,10 +2,14 @@
 
 This readme will be expanded soon.
 
-## TODO / Currently worked on
+## Currently being worked on
 
-- Roadmap Site - @sunnickel - (in progress)
-- Download Site - @misterquestions - (in progress)
+- Roadmap Site - @sunnickel
+- Download Site - @misterquestions
+
+## ToDo
+
+- Change pictures on homepage
 
 ## Deployment
 
